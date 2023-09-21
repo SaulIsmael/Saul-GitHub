@@ -1,0 +1,18 @@
+// cree un objeto circ1 de la clase Circunferencia
+       Circunferencia circ1 = new Circunferencia (10.50);
+        System.out.println(circ1.getRadio());
+        System.out.println(circ1.perimetro());
+        System.out.println(circ1.area());
+        System.out.println("-------------");
+        circ1.crearCircunferencia();
+       //Imprimo nuevamente con el valor ingresado por el usuario
+        System.out.println(circ1.getRadio());
+        System.out.println(circ1.perimetro());
+        System.out.println(circ1.area());
+        
+        
+        
+        
+    }
+
+}

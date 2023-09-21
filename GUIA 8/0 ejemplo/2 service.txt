@@ -1,0 +1,8 @@
+public class PersonaServicio {
+
+    public void mostrarAtributos(Persona a) {
+        System.out.println("El nombre de la persona es: " + a.getNombre());
+        System.out.println("La edad de la persona es: " + a.getEdad());
+    }
+
+}

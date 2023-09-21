@@ -1,0 +1,35 @@
+do {
+            
+        
+        System.out.println("Seleccione una opcion:");
+        System.out.println("1. Deposito");
+        System.out.println("2. Extraccion");
+        System.out.println("3. Extraccion Rapida");
+        System.out.println("4. Consultar Saldo");
+        System.out.println("5. Consultar Datos");
+        System.out.println("6. Salir");
+        opc = sc.nextInt();
+        
+        
+        switch (opc) {
+            case 1:
+                    c1.ingresar(primera);
+                break;
+            case 2:
+                    c1.retirar(primera);
+                break;
+            case 3:
+                    c1.extraccionRapida(primera);
+                break;
+            case 4:
+                    c1.consultarSaldo(primera);
+                break;
+            case 5:
+                    c1.consultarDatos(primera);
+                break;
+            case 6:
+                    System.out.println("Buenas Tardes");
+                break;
+
+        }
+        } while (opc != 6);

@@ -1,0 +1,71 @@
+package guia8.ejercicio3;
+
+import Entidad.Persona;
+import Servicio.PersonaServicio;
+
+/**
+ *
+ * @author Saul Ismael Mansilla
+ */
+public class GUIA8Ejercicio3 {
+
+    public static void main(String[] args) {
+        PersonaServicio servicio = new PersonaServicio();
+        Persona p1 = null;
+       // Persona p2 = servicio.crearPersona();
+       // Persona p3 = servicio.crearPersona();
+        //Persona p4 = servicio.crearPersona();
+
+        boolean[] mayorEdad = new boolean[4];
+        double[] IMC = new double[4];
+    try{     
+        mayorEdad[0] = servicio.esMayorDeEdad(p1);
+       // mayorEdad[1] = servicio.esMayorDeEdad(p2);
+        //mayorEdad[2] = servicio.esMayorDeEdad(p3);
+       // mayorEdad[3] = servicio.esMayorDeEdad(p4);
+       // IMC[0] = servicio.calcularIMC(p1);
+        //IMC[1] = servicio.calcularIMC(p2);
+        //IMC[2] = servicio.calcularIMC(p3);
+       // IMC[3] = servicio.calcularIMC(p4);
+    }
+    catch (Exception e) {
+        System.out.println("ERROR BOLUDOOO");
+
+
+        }
+ 
+        int contMayorEdad = 0;
+        int contMenorEdad = 0;
+        int bajoPeso = 0;
+        int pesoIdeal = 0;
+        int sobrePeso = 0;
+
+        for (int i = 0; i < 4; i++) {
+            if (mayorEdad[i]) {
+                contMayorEdad++;
+            } else {
+                contMenorEdad++;
+            }
+
+        }
+        for (int i = 0; i < 4; i++) {
+            if (IMC[i] == -1.0) {
+                bajoPeso++;
+
+            } else if (IMC[i] == 0.0) {
+                pesoIdeal++;
+            } else {
+                sobrePeso++;
+            }
+
+        }
+        System.out.println(bajoPeso + "" + "" + pesoIdeal + sobrePeso);
+        System.out.println("El porcentaje de personas mayores es: " + (contMayorEdad * 100) / 4);
+        System.out.println("El porcentaje de personas menores es: " + (contMenorEdad * 100) / 4);
+        System.out.println("El porcentaje de personas con bajo peso es: " + (bajoPeso * 100) / 4);
+        System.out.println("El porcentaje de personas con peso ideal es: " + (pesoIdeal * 100) / 4);
+        System.out.println("El porcentaje de personas con sobre peso es: " + (sobrePeso * 100) / 4);
+
+    }
+
+}

@@ -1,0 +1,41 @@
+Scanner leer = new Scanner(System.in);
+        int uno, dos, tres, cuatro, cinco;
+        uno = 0;
+        dos = 0;
+        tres = 0;
+        cuatro = 0;
+        cinco = 0;
+
+        System.out.println("ingrese tamaño vector");
+        int[] vector = new int[leer.nextInt()];
+        for (int i = 0; i < vector.length; i++) {
+            vector[i] = (int) (Math.random() * 100000); //entre 0 y 99999
+            String digitos = String.valueOf(vector[i]);
+            int cantidad = digitos.length();
+            switch (cantidad) {
+                case 1:
+                    uno++;
+                    break;
+                case 2:
+                    dos++;
+                    break;
+                case 3:
+                    tres++;
+                    break;
+                case 4:
+                    cuatro++;
+                    break;
+                default:
+                    cinco++;
+
+            }
+            System.out.println(vector[i]);
+        }
+        System.out.println("Cantidad de numeros de 1 digito = " + uno);
+        System.out.println("Cantidad de numeros de 2 digito = " + dos);
+        System.out.println("Cantidad de numeros de 3 digito = " + tres);
+        System.out.println("Cantidad de numeros de 4 digito = " + cuatro);
+        System.out.println("Cantidad de numeros de 5 digito = " + cinco);
+
+    }
+}

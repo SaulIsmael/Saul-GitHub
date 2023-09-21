@@ -1,0 +1,53 @@
+public class CuentaBancariaServicio {
+    private final Scanner sc = new Scanner(System.in);
+    
+    public CuentaBancaria crearCuenta(){
+        System.out.println("Ingrese su numero de cuenta");
+        int num = sc.nextInt();
+        System.out.println("Ingrese su DNI");
+        int dni = sc.nextInt();
+        return new CuentaBancaria(num,dni);
+    }
+    public double ingresar(CuentaBancaria ingreso){
+        double saldo = ingreso.getSaldoActual();
+        System.out.println("Cuanta quiere ingresar?");
+        double ingresado = sc.nextDouble();
+        ingreso.setSaldoActual(saldo + ingresado);
+        return ingreso.getSaldoActual();
+    }
+    public double retirar(CuentaBancaria retirar){
+        System.out.println("Cuanto quiere retirar?");
+        double retiro = sc.nextDouble();
+        double saldo = retirar.getSaldoActual();
+        
+        if (saldo >= retiro) {
+            retirar.setSaldoActual(saldo - retiro);
+        }else{
+            retirar.setSaldoActual(0);
+        }
+        return retirar.getSaldoActual();
+        
+    }
+    
+    public double extraccionRapida(CuentaBancaria ingreso){
+        System.out.println("Cuanto quiere retirar?");
+        double retiro = sc.nextDouble();
+        double saldo = ingreso.getSaldoActual();
+        
+        if (retiro <= 0.2 * saldo) {
+            ingreso.setSaldoActual(saldo - retiro);
+        }else{
+            ingreso.setSaldoActual(saldo);
+            System.out.println("Saldo insuficiente");
+        }
+        return ingreso.getSaldoActual();
+    }
+    
+    public void consultarSaldo(CuentaBancaria ingreso){
+        System.out.println("Su saldo es "+ ingreso.getSaldoActual());
+    }
+    
+    public void consultarDatos(CuentaBancaria ingreso){
+        System.out.println(ingreso.toString());
+    }
+}

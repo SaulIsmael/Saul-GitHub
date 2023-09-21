@@ -1,0 +1,62 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Servicio;
+
+import Entidad.Persona;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Saul Ismael Mansilla
+ */
+public class PersonaServicio {
+
+    public Persona crearPersona() {
+        Scanner leer = new Scanner(System.in);
+        Persona ps1 = new Persona();
+        System.out.println("Ingrese el nombre");
+        ps1.setNombre(leer.nextLine());
+        System.out.println("Ingrese la edad:");
+        ps1.setEdad(leer.nextInt());
+        do {
+            System.out.println("Ingrese el sexo (H, M, O)");
+            ps1.setSexo(leer.next());
+        }  while (!"M".equals(ps1.getSexo()) && (!"H".equals(ps1.getSexo()) && !"O".equals(ps1.getSexo())));
+        System.out.println("Ingrese el peso:");
+        ps1.setPeso(leer.nextDouble());
+        System.out.println("Ingrese la altura:");
+        ps1.setAltura(leer.nextDouble());
+        return ps1;
+        
+    }
+
+    public double calcularIMC(Persona ps1) {
+        double peso;
+        peso = ps1.getPeso() / (Math.pow(ps1.getAltura(), 2));
+
+        if (peso < 20) {
+            peso = -1.0;
+        } else if (peso >= 20 && peso <= 25) {
+            peso = 0.0;
+
+        } else {
+            peso = 1.0;
+        }
+
+        return peso;
+    }
+
+    public boolean esMayorDeEdad(Persona ps1) {
+        boolean edad = false;
+        if (ps1.getEdad() > 21) {
+            edad = true;
+        }
+
+        return edad;  
+    
+    
+  
+}}

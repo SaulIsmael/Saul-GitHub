@@ -1,0 +1,39 @@
+Scanner input = new Scanner(System.in);
+        String[] palabras = new String[5];
+        int filaAleatoria = (int) (Math.random() * 20);
+        char[][] sopa = new char[20][20];
+
+        // Leer las palabras
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Ingrese la palabra " + (i + 1) + " (de 3 a 5 caracteres): ");
+            palabras[i] = input.nextLine();
+            while (palabras[i].length() < 3 || palabras[i].length() > 5) {
+                System.out.print("La palabra debe tener entre 3 y 5 caracteres. Ingrese de nuevo: ");
+                palabras[i] = input.nextLine();
+            }
+        }
+
+        // Llenar la sopa de letras
+        for (int i = 0; i < 20; i++) {
+            for (int j = 0; j < 20; j++) {
+                sopa[i][j] = (char) ((int) (Math.random() * 10) + '0');
+            }
+        }
+        int posicion = 0;
+        for (int i = 0; i < palabras.length; i++) {
+            for (int j = 0; j < palabras[i].length(); j++) {
+                sopa[filaAleatoria][posicion] = palabras[i].charAt(j);
+                posicion++;
+            }
+        }
+
+        // Imprimir la sopa de letras
+        for (int i = 0; i < 20; i++) {
+            for (int j = 0; j < 20; j++) {
+                System.out.print(sopa[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+la sopa de letras

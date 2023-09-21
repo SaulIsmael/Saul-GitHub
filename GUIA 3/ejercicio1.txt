@@ -1,0 +1,28 @@
+package GUIA_3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Saul Ismael Mansilla
+ */
+public class ejercicio1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       int numero;
+           int modulo;
+           Scanner leer = new Scanner(System.in);
+           System.out.println("Por favor, digite el número deseado: ");
+           numero = leer.nextInt();
+           modulo = numero % 2;
+           if (modulo == 0) {
+               System.out.println("El numéro ingresado es par");
+                       
+           } else
+               System.out.println("El número ingresado es impar");
+    }
+    
+}

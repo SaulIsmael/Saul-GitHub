@@ -1,0 +1,8 @@
+public static void main(String[] args) {
+
+        PersonaServicio p1 = new PersonaServicio();
+        Persona fede = new Persona();
+
+        p1.mostrarAtributos(fede);
+
+    }

@@ -1,0 +1,46 @@
+public class CafeteraServicio {
+
+    Scanner sc = new Scanner(System.in);
+
+    public int llenarCafetera(Cafetera uno) {
+        int max = uno.getCapacidadMax();
+
+        uno.setCapacidadAct(max);
+
+        return uno.getCapacidadAct();
+    }
+
+    public int servirTaza(int taza, Cafetera uno) {
+        int actual = uno.getCapacidadAct();
+
+        System.out.println("Sirviendo cafe...");
+        if (uno.getCapacidadAct() > taza) {
+            System.out.println("Se lleno la taza por completo");
+            uno.setCapacidadAct(actual - taza);
+        } else {
+            taza = (taza - uno.getCapacidadAct());
+            System.out.println("No se lleno la taza por completo, se lleno con " + taza + " cm3 de cafe");
+            uno.setCapacidadAct(actual - taza);
+        }
+        return taza;
+
+    }
+
+    public int vaciarCafetera(Cafetera uno) {
+        uno.setCapacidadAct(0);
+
+        return uno.getCapacidadAct();
+    }
+
+    public int agregarCafe(int cafe, Cafetera uno) {
+        int actual = uno.getCapacidadAct();
+        uno.setCapacidadAct(actual + cafe);
+
+        return uno.getCapacidadAct();
+    }
+    
+    public void mostrarCafetera(Cafetera uno) {
+        System.out.println(uno.toString());
+    }
+
+}

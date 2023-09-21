@@ -1,0 +1,33 @@
+public class Cafetera {
+
+    public int capacidadMax = 1000;
+    public int capacidadAct;
+
+    public Cafetera() {
+    }
+
+    public Cafetera(int capacidadMax, int capacidadAct) {
+        this.capacidadMax = capacidadMax;
+        this.capacidadAct = capacidadAct;
+    }
+
+    public int getCapacidadMax() {
+        return capacidadMax;
+    }
+
+    public void setCapacidadMax(int capacidadMax) {
+        this.capacidadMax = capacidadMax;
+    }
+
+    public int getCapacidadAct() {
+        return capacidadAct;
+    }
+
+    public void setCapacidadAct(int capacidadAct) {
+        this.capacidadAct = capacidadAct;
+    }
+
+    @Override
+    public String toString() {
+        return "Cafetera{" + "capacidadMax=" + capacidadMax + ", capacidadAct=" + capacidadAct + '}';
+    }

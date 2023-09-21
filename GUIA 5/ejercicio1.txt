@@ -1,0 +1,31 @@
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int cont = 0;
+        System.out.println("Ingrese el tamaño del vector");
+        int tamVec = sc.nextInt();
+        System.out.println("*");
+        int vector[] = new int[tamVec];
+
+        for (int i = 0; i < vector.length; i++) {
+            vector[i] = (int) (Math.random() * 10);
+            System.out.println(vector[i]);
+
+        }
+
+        System.out.println("Ingrese el numero que desea buscar");
+        int buscar = sc.nextInt();
+
+        for (int i = 0; i < vector.length; i++) {
+            if (vector[i] == buscar) {
+                System.out.println("El numero " + buscar + " esta en la posicion: " + i);
+                cont++;
+            }
+        }
+
+        if (cont > 1) {
+            System.out.println("El numero esta repetido");
+        } else {
+            System.out.println("El numero aparece una sola vez");
+        }
+
+    }

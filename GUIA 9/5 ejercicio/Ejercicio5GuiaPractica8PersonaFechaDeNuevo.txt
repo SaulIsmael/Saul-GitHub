@@ -1,0 +1,34 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ejercicio5guiapractica8personafechadenuevo;
+
+import Entidad.Persona;
+import Service.PersonaService;
+import java.util.Date;
+import java.util.Scanner;
+
+/**
+ *
+ * @author katsu
+ */
+public class Ejercicio5GuiaPractica8PersonaFechaDeNuevo {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in).useDelimiter("\n");
+        
+        PersonaService pServ = new PersonaService();
+        Persona person = pServ.crearPersona();
+        pServ.calcularEdad(person);
+        System.out.println("Ingrese una edad para comparar con la ingresada anteriormente: ");
+        int edad = sc.nextInt();
+        pServ.menorQue(person, edad);
+        pServ.mostrarPersona(person);
+    }
+    
+}
