@@ -1,0 +1,217 @@
+:::::::::::::::::::::::::: JAVA VS PSEINT :::::::::::::::::::::::::::
+
+*Tipos de variables:
+
+String 	= Cadena
+char 	= Caracter (solo una letra)
+byte 	= Entero (de +127 hasta -128)
+short 	= Entero (de +32,768 hasta -32,767)
+int 	= Entero (de  2,147,483,647 hasta -2,147,483,648)
+long 	= Entero (de +9,223,372,036,854,775,807 hasta -9,223,372,036,854,775,808)
+float 	= Real (de 3.402,823,5 E+38 hasta1.4 E-45)
+double 	= Real (de 1.797,693,134,862,315,7 E+308 hasta 4.9 E-324)
+boolean = Logico (true-false)
+
+(mas usadas: String, int, long, double, boolean, char)
+---------------------------------------------------------
+*Estructuras de control:
+
+if 		= Si
+else 		= SiNo
+switch 		= Segun
+while 		= Mientras
+do - while 	= Hacer - Mientras Que
+for 		= Para
+---------------------------------------------------------
+*Operadores Aritmeticos:
+
++	= suma
+-	= resta
+* 	= multiplicacion
+/	= division
+%	= MOD
+---------------------------------------------------------
+*Operadores de Igualidad y Relacion:
+
++	= suma. indica que el valor es positivo
+-	= resta. indica que el valor es negativo
+++	= incremento
+--	= decremento
+== 	= igual (para comparar)
+! 	= negacion
+!=	= desigual
+>	= mayor que
+>=	= mayor o igual que
+<	= menor que
+<=	= menor o igual que
+---------------------------------------------------------
+*Operadores Condicionales:
+
+&& 	= Y
+|| 	= O
+!	= negacion
+
+*********************************************************************************************
+Todos los ejemplos realizados a continuacion, son basados en pasados ejercicios de pseint.
+*********************************************************************************************
+DEFINIR VARIABLES Y ASIGNARLES VALOR.
+
+(Pseint)
+
+Definir num1 Como Entero
+num1 = 5
+
+---------------------------------------------------------
+(java)
+
+int num1 = 5;
+
+*********************************************************************************************
+
+ESCRIBIR.
+
+(Pseint)
+
+Escribir "Ingrese un numero"
+Escribir Sin Saltar "Ingrese un numero"
+
+---------------------------------------------------------
+(java)
+
+System.out.println("Ingrese un numero");
+System.out.print("Ingrese un numero");
+
+*********************************************************************************************
+LEER.
+
+(Pseint)
+
+Leer num1
+
+---------------------------------------------------------
+(java) - (nextLine() para string. // nextInt() para int. // nextDouble() para double, etc)
+//hay que llamar un scanner, en este caso le ponemos el nombre de: leer//
+
+Scanner leer = new Scanner(System.in);
+
+num1 = leer.nextInt();
+
+*********************************************************************************************
+
+SI/SINO:
+
+(Pseint)
+
+Si num1 < 5 Entonces
+	Escribir "El numero es menor a 5"
+SiNo
+	Escribir "El numero es mayor a 5"
+FinSi
+
+---------------------------------------------------------
+(java)
+
+if (num1 < 5) {
+	System.out.println("El numero es menor a 5")
+} else {
+	System.out.println("El numero es mayor a 5")
+}
+
+*********************************************************************************************
+
+SEGUN:
+
+(Pseint)
+
+Segun opc Hacer
+	1:
+		Escribir "Otoño"
+	2:
+		Escribir "Invierno"
+	3:
+		Escribir "Primavera"
+	4:
+		Escribir "Verano"
+	De Otro Modo:
+		Escribir "No corresponde a una estacion"
+FinSegun
+---------------------------------------------------------
+(java)
+
+switch (opc) {
+	case 1:
+		System.out.print.ln("Otoño");
+		break;
+	case 2:
+		System.out.print.ln("Invierno");
+		break;
+	case 3:
+		System.out.print.ln("Primavera");
+		break;
+	case 4:
+		System.out.print.ln("Verano");
+		break;
+	default:
+		System.out.print.ln("No corresponde a una estacion");
+}
+
+*********************************************************************************************
+
+MIENTRAS:
+
+(Pseint)
+
+Mientras nota < 0 o nota > 10
+
+	Escribir "Ingrese la nota nuevamente"
+	Leer nota
+
+FinMientras
+
+---------------------------------------------------------
+(java)
+
+while (nota < 0 || nota > 10) {
+
+	System.out.print.ln("Ingrese la nota nuevamente");
+	nota = leer.nextInt();
+}
+
+*********************************************************************************************
+
+HACER/MIENTRAS QUE:
+
+(Pseint)
+
+Hacer
+	Escribir "Ingrese la clave"
+	Leer clave
+Mientras Que clave <> "eureka"
+
+---------------------------------------------------------
+(java)
+
+do {
+	System.out.print.ln("Ingrese la clave");
+	clave = leer.nextLine();
+} while (clave == "eureka");
+
+*********************************************************************************************
+
+PARA:
+
+(Pseint)
+
+Para i <- 0 Hasta num Con 1 paso Hacer
+	suma = suma + i
+FinPara
+
+---------------------------------------------------------
+(java)
+
+for (int i = 0; i < num; i++) {
+	suma = suma + i;
+}
+
+*********************************************************************************************
+
