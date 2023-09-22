@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tarea-index",
+      "appliesTo": "Tarea de compañeros/12-JavaScript/index.html",
+      "type": "launch"
+    }
+  ]
+}
