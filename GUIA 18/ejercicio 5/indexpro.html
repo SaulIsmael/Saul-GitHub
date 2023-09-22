@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h5>
+      Construir un programa que simule un menú de opciones para realizar las
+      cuatro operaciones aritméticas básicas (suma, resta, multiplicación y
+      división) con dos valores numéricos enteros. El usuario, además, debe
+      especificar la operación con el primer carácter de la operación que desea
+      realizar: ‘S' o ‘s’ para la suma, ‘R’ o ‘r’ para la resta, ‘M’ o ‘m’ para
+      la multiplicación y ‘D’ o ‘d’ para la división.
+    </h5>
+    <form onsubmit="event.preventDefault(); operacion();" >
+        <label for="num1">Ingrese un numero:</label> <br>
+        <input type="text" id="num1"><br>
+      
+      <label for="num2">Ingrese un segundo numero</label> <br>
+      <input type="text" id="num2" > <br>
+      <label for="opc">
+        Ingrese la letra de la funcion deseada: <br> ‘S' o ‘s’ para la suma <br>
+        ‘R’ o ‘r’ para la resta <br>
+        ‘M’ o ‘m’ para la multiplicación <br>
+        ‘D’ o ‘d’ para la división. <br></label> 
+      <input type="text" id="letra" /><br /> 
+      <button type="submit">Enviar</button> <br>
+      <h5 id="resultado"></h5>
+    </form>
+    <script src="scriptpro1.js" type="text/javascript"></script>
+  </body>
+</html>

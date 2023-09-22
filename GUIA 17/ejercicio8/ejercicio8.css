@@ -1,0 +1,20 @@
+/* link sin visitar */
+a:link {
+    color: red;
+    }
+    /* link visitado*/
+    a:visited {
+    color: grey;
+    }
+    /* mouse sobre el link*/
+    a:hover {
+    background-color: red;    
+    color: white;
+    }
+    h1{
+        color: blueviolet;
+    }
+    body{
+        background-color: yellowgreen;
+    }
+    

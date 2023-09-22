@@ -1,0 +1,66 @@
+¡Por supuesto! Aquí tienes una lista más completa de comandos para HTML y CSS que puedes utilizar en Visual Studio Code:
+
+**HTML**:
+
+1. `!`: Crea una estructura básica de un documento HTML.
+2. `html`: Crea la etiqueta de apertura y cierre `<html>`.
+3. `head`: Crea la etiqueta de apertura y cierre `<head>`.
+4. `meta`: Crea una etiqueta meta para metadatos.
+5. `link`: Crea una etiqueta link para enlazar hojas de estilo o fuentes.
+6. `script`: Crea una etiqueta script para enlazar archivos de script.
+7. `style`: Crea una etiqueta style para definir estilos CSS en línea.
+8. `title`: Crea la etiqueta `<title>` para el título de la página.
+9. `base`: Crea una etiqueta base para especificar la URL base para las rutas relativas.
+10. `body`: Crea la etiqueta de apertura y cierre `<body>`.
+11. `header`: Crea la etiqueta de apertura y cierre `<header>` para el encabezado de la página.
+12. `nav`: Crea la etiqueta de apertura y cierre `<nav>` para la navegación del sitio.
+13. `section`: Crea la etiqueta de apertura y cierre `<section>` para secciones de contenido.
+14. `article`: Crea la etiqueta de apertura y cierre `<article>` para artículos independientes.
+15. `footer`: Crea la etiqueta de apertura y cierre `<footer>` para el pie de página de la página.
+16. `div`: Crea una etiqueta `<div>` para un contenedor genérico.
+17. `span`: Crea una etiqueta `<span>` para estilizar un fragmento de texto.
+18. `img`: Crea una etiqueta `<img>` para insertar imágenes.
+19. `a`: Crea una etiqueta `<a>` para enlaces.
+20. `ul` o `ol`: Crea una lista desordenada `<ul>` o una lista ordenada `<ol>`.
+21. `li`: Crea una etiqueta `<li>` para elementos de lista.
+22. `table`: Crea una etiqueta `<table>` para tablas.
+23. `tr`: Crea una etiqueta `<tr>` para filas de tabla.
+24. `td`: Crea una etiqueta `<td>` para celdas de tabla.
+25. `form`: Crea una etiqueta `<form>` para formularios.
+26. `input`: Crea una etiqueta `<input>` para campos de entrada.
+27. `textarea`: Crea una etiqueta `<textarea>` para áreas de texto de entrada.
+28. `button`: Crea una etiqueta `<button>` para botones.
+29. `select`: Crea una etiqueta `<select>` para listas desplegables.
+30. `option`: Crea una etiqueta `<option>` para opciones de listas desplegables.
+31. `label`: Crea una etiqueta `<label>` para etiquetas de formulario.
+
+**CSS**:
+
+1. `background`: Propiedad para establecer el fondo de un elemento.
+2. `color`: Propiedad para establecer el color del texto.
+3. `font-family`: Propiedad para establecer la fuente del texto.
+4. `font-size`: Propiedad para establecer el tamaño de la fuente.
+5. `font-weight`: Propiedad para establecer el grosor de la fuente.
+6. `font-style`: Propiedad para establecer el estilo de la fuente (normal, cursiva, etc.).
+7. `text-align`: Propiedad para alinear el texto dentro de un elemento.
+8. `text-decoration`: Propiedad para establecer la decoración del texto (subrayado, tachado, etc.).
+9. `margin`: Propiedad para establecer los márgenes de un elemento.
+10. `padding`: Propiedad para establecer el relleno interno de un elemento.
+11. `border`: Propiedad para establecer el borde de un elemento.
+12. `width`: Propiedad para establecer el ancho de un elemento.
+13. `height`: Propiedad para establecer la altura de un elemento.
+14. `display`: Propiedad para establecer el tipo de visualización de un elemento (bloque, en línea, etc.).
+15. `position`: Propiedad para establecer el tipo de posición de un elemento (absoluta, relativa, fija, etc.).
+16. `float`: Propiedad para establecer el flujo de elementos en torno a otros elementos flotantes.
+17. `box-shadow`: Propiedad para agregar una sombra alrededor de un elemento.
+18. `border-radius`: Propiedad para establecer el radio de esquinas del borde.
+19. `background-image`: Propiedad para establecer una imagen de fondo.
+20. `background-color`: Propiedad para establecer un color de fondo.
+21. `background-size`: Propiedad para establecer el tamaño de la imagen de fondo.
+22. `background-position`: Propiedad para establecer la posición de la imagen de fondo.
+23. `background-repeat`: Propiedad para establecer la repetición de la imagen de fondo.
+24. `opacity`: Propiedad para establecer la opacidad de un elemento.
+25. `transition`: Propiedad para crear transiciones animadas entre diferentes estados de un elemento.
+26. `transform`: Propiedad para aplicar transformaciones a un elemento (rotación, escala, etc.).
+
+Recuerda que estos son solo algunos de los comandos más comunes en HTML y CSS. También puedes utilizar atajos de teclado para agilizar tu flujo de trabajo. Visual Studio Code ofrece muchos plugins y extensiones que pueden mejorar aún más tu experiencia de codificación con HTML y CSS..

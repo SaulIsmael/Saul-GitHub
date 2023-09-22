@@ -1,0 +1,17 @@
+int [] arreglo = new int[5];
+
+       for (int i = 0; i < arreglo.length; i++) {
+        arreglo[i] = i;
+       }
+       try {
+
+           for (int index = 0; index < 6; index++) {
+            System.out.println(arreglo[index]);
+           }
+       } catch (ArrayIndexOutOfBoundsException e) {
+        System.out.println("Indice fuera de rango");
+       }
+       for (int index = 0; index < arreglo.length; index++) {
+            System.out.println("************");
+            System.out.println(arreglo[index]);
+           }

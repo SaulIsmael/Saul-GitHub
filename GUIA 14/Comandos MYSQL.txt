@@ -1,0 +1,186 @@
+lista más completa de comandos de MySQL:
+
+1. **Bases de datos:**
+   - Crear una base de datos:
+     ```
+     CREATE DATABASE nombre_basedatos;
+     ```
+
+   - Seleccionar una base de datos:
+     ```
+     USE nombre_basedatos;
+     ```
+
+   - Mostrar todas las bases de datos:
+     ```
+     SHOW DATABASES;
+     ```
+
+   - Eliminar una base de datos:
+     ```
+     DROP DATABASE nombre_basedatos;
+     ```
+
+2. **Tablas:**
+   - Crear una tabla:
+     ```
+     CREATE TABLE nombre_tabla (
+         columna1 tipo_dato1,
+         columna2 tipo_dato2,
+         ...
+     );
+     ```
+
+   - Modificar una tabla (agregar columna):
+     ```
+     ALTER TABLE nombre_tabla
+     ADD columna tipo_dato;
+     ```
+
+   - Modificar una tabla (modificar columna):
+     ```
+     ALTER TABLE nombre_tabla
+     MODIFY columna tipo_dato;
+     ```
+
+   - Modificar una tabla (eliminar columna):
+     ```
+     ALTER TABLE nombre_tabla
+     DROP COLUMN columna;
+     ```
+
+   - Eliminar una tabla:
+     ```
+     DROP TABLE nombre_tabla;
+     ```
+
+   - Mostrar todas las tablas de una base de datos:
+     ```
+     SHOW TABLES;
+     ```
+
+3. **Manipulación de datos:**
+   - Insertar datos en una tabla:
+     ```
+     INSERT INTO nombre_tabla (columna1, columna2, ...)
+     VALUES (valor1, valor2, ...);
+     ```
+
+   - Actualizar datos en una tabla:
+     ```
+     UPDATE nombre_tabla
+     SET columna = nuevo_valor
+     WHERE condicion;
+     ```
+
+   - Eliminar datos de una tabla:
+     ```
+     DELETE FROM nombre_tabla
+     WHERE condicion;
+     ```
+
+   - Consultar todos los registros de una tabla:
+     ```
+     SELECT * FROM nombre_tabla;
+     ```
+
+   - Consultar registros con una condición:
+     ```
+     SELECT * FROM nombre_tabla
+     WHERE condicion;
+     ```
+
+   - Ordenar registros en una consulta:
+     ```
+     SELECT * FROM nombre_tabla
+     ORDER BY columna ASC/DESC;
+     ```
+
+   - Limitar el número de registros en una consulta:
+     ```
+     SELECT * FROM nombre_tabla
+     LIMIT cantidad;
+   
+   - ROUND
+     La sentencia round sirve para redondear los decimales de un número      que se pida en un
+     select.
+     SELECT AVG(salario) FROM Empleados;
+
+
+SELECT ROUND(AVG(salario)) FROM Empleados;     ```
+
+4. **Consultas avanzadas:**
+
+
+   - Unir 2 tablas en 1 consulta con (Inner Join)
+     de 1 producto a otro producto de la tabla
+
+   - Unir tablas en una consulta (JOIN):
+     ```
+     SELECT columna1, columna2, ...
+     FROM tabla1
+     JOIN tabla2 ON tabla1.columna = tabla2.columna;
+     ```
+
+   - Agrupar registros y realizar cálculos (GROUP BY, HAVING):
+     ```
+     SELECT columna1, COUNT(columna2)
+     FROM nombre_tabla
+     GROUP BY columna1
+     HAVING condicion;
+     ```
+
+   - Realizar operaciones y funciones en consultas (SUM, AVG, MAX, MIN, etc.):
+     ```
+     SELECT SUM(columna) AS total, AVG(columna) AS promedio
+     FROM nombre_tabla;
+     ```
+
+   - Consultas condicionales (CASE):
+     ```
+     SELECT columna,
+         CASE
+             WHEN condicion1 THEN valor1
+             WHEN condicion2 THEN valor2
+             ELSE valor3
+         END AS nueva_columna
+     FROM nombre_tabla;
+     ```
+
+5. **Otros comandos:**
+   - Crear un índice en una tabla:
+     ```
+     CREATE INDEX nombre_indice
+     ON nombre_tabla (columna);
+     ```
+
+   - Realizar copias de seguridad (dump) de una base de datos:
+     ```
+     mysqldump -u usuario -p nombre_basedatos > archivo_dump.sql
+     ```
+
+   - Restaurar una copia de seguridad en una base de datos:
+     ```
+     mysql -u usuario -p nombre_basedatos < archivo_dump.sql
+
+
+ejemplo de diferentes consultas utilizando la cláusula `LIKE` en una lista:
+
+1. Seleccionar todos los usuarios cuyo nombre empiece con "A":
+
+
+SELECT * FROM usuarios WHERE nombre LIKE 'A%';
+```
+
+2. Seleccionar todos los usuarios cuyo nombre termine con la letra "o":
+
+
+SELECT * FROM usuarios WHERE nombre LIKE '%o';
+```
+
+3. Seleccionar todos los usuarios cuyo nombre contiene la secuencia "ana" en cualquier lugar de la cadena:
+
+
+SELECT * FROM usuarios WHERE nombre LIKE '%ana%';
+```
+

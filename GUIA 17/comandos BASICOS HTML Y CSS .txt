@@ -1,0 +1,90 @@
+1 - Aquí tienes algunos comandos esenciales:
+
+Comandos básicos de HTML:
+
+html: Crea una estructura básica de un archivo HTML con etiquetas de inicio y cierre.
+Comandos básicos de CSS:
+
+link: Crea un enlace para conectar un archivo CSS externo con un documento HTML.
+style: Crea un bloque de estilo dentro de la etiqueta <head> del documento HTML.
+Otros comandos útiles:
+
+div: Crea un contenedor de división genérico.
+p: Crea un párrafo de texto.
+h1, h2, h3, h4, h5, h6: Crea encabezados de diferentes niveles.
+ul y li: Crea una lista desordenada (ul) y elementos de la lista (li).
+ol y li: Crea una lista ordenada (ol) y elementos de la lista (li).
+img: Inserta una imagen en el documento.
+a: Crea un enlace (hipervínculo) a otra página o recurso.
+En cuanto a los comandos de CSS, estos son solo ejemplos básicos. CSS es un lenguaje más amplio con una gran cantidad de propiedades y selectores para estilizar páginas web.
+
+Recuerda que en Visual Studio Code, puedes usar funciones de autocompletado (Ctrl + Espacio) para obtener sugerencias de etiquetas HTML y propiedades CSS mientras escribes, lo que facilita la creación de código.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2 - Aquí tienes algunos comandos y ejemplos básicos de CSS para trabajar en Visual Studio Code:
+
+Estilo de texto:
+
+Copy code
+selector {
+  color: valor; /* Color del texto */
+  font-size: valor; /* Tamaño de fuente */
+  font-family: valor; /* Tipo de fuente */
+  font-weight: valor; /* Grosor de la fuente */
+  text-align: valor; /* Alineación del texto (left, center, right) */
+  text-decoration: valor; /* Decoración del texto (underline, line-through) */
+}
+Estilo de fondo:
+
+
+Copy code
+selector {
+  background-color: valor; /* Color de fondo */
+  background-image: valor; /* Imagen de fondo */
+  background-repeat: valor; /* Repetición de la imagen de fondo (repeat, no-repeat) */
+  background-size: valor; /* Tamaño de la imagen de fondo (cover, contain) */
+}
+Estilo de borde:
+
+
+Copy code
+selector {
+  border: valor; /* Grosor, estilo y color del borde (ejemplo: 1px solid black) */
+  border-radius: valor; /* Radio de las esquinas del borde */
+}
+Estilo de caja:
+
+
+Copy code
+selector {
+  width: valor; /* Ancho del elemento */
+  height: valor; /* Altura del elemento */
+  margin: valor; /* Márgenes exteriores (top, right, bottom, left) */
+  padding: valor; /* Relleno interno (top, right, bottom, left) */
+  box-shadow: valor; /* Sombra de la caja */
+}
+Estilo de lista:
+
+
+Copy code
+selector {
+  list-style-type: valor; /* Tipo de marcador de lista (disc, circle, square) */
+}
+Estilo de enlace (hipervínculo):
+
+Copy code
+selector {
+  text-decoration: valor; /* Decoración del texto del enlace (underline, none) */
+  color: valor; /* Color del texto del enlace */
+}
+Estilo de clase e ID:
+
+
+Copy code
+.clase {
+  /* Estilos para elementos con la clase 'clase' */
+}
+
+#id {
+  /* Estilos para el elemento con el ID 'id' */

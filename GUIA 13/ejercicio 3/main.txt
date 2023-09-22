@@ -1,0 +1,23 @@
+Scanner leer = new Scanner(System.in);
+
+    System.out.println("Ingrese numero");
+    String var1 = leer.nextLine();
+    System.out.println("Ingrese otro numero");
+    String var2 = leer.nextLine();
+
+    
+    DivicionNumero dividir = new DivicionNumero();
+    
+    try {
+        Integer numero1 = Integer.parseInt(var1);
+        Integer numero2 = Integer.parseInt(var2);
+            dividir.divicion(numero1, numero2);
+        } catch (NumberFormatException n) {
+            System.out.println("Ingrese un numero");
+        } catch (ArithmeticException a) {
+            System.out.println("No ingrese cero");
+        }
+ 
+       
+    }
+}
