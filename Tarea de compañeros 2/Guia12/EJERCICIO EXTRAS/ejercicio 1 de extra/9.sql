@@ -1,0 +1,1 @@
+select * from empleado RIGHT join departamento ON empleado.id_depto = departamento.id_depto WHERE departamento.ciudad = 'CIUDAD REAL' AND empleado.cargo LIKE 'Jefe%';

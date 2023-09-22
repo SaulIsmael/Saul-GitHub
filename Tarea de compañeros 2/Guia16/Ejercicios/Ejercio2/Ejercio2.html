@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, th, td{
+            border: 1px solid #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        th, td{
+            padding: 5px;
+        }
+        th{
+            background: url(fondo_gris.gif);
+            text-align: center;
+        }
+        td{
+            text-align: right;
+        }
+
+        .fondo_euro{
+            background: #e6f3ff url(euro.png) no-repeat;
+            background-position: left center;
+            padding-left: 25px;
+            text-align: left;
+        }
+        .fondo_Dolar{
+            background: #e6f3ff url(dolar.png) no-repeat;
+            background-position: left center;
+            padding-left: 25px;
+            text-align: left;
+
+        }
+
+        .fondo_Libra{
+            background: #e6f3ff url(libra.png) no-repeat;
+            background-position: left center;
+            padding-left: 25px;
+            text-align: left;
+
+        }
+
+        .fondo_yen{
+            background: #e6f3ff url(yen.png) no-repeat;
+            background-position: left center;
+            padding-left: 25px;
+            text-align: left;
+
+        }
+        .fondo_Amarillo{
+            background-color:#ffffcc;
+        }
+        
+    </style>
+
+</head>
+<body>
+<table cellspading="0" cellspacing="0"> 
+    <tr>
+        <th>Cambio</th>
+        <th>Compra</th>
+        <th>Venta</th>
+        <th>Maximo</th>
+        <th>Minimo</th>
+    </tr>
+
+    <tr class="fondo_Amarillo">
+        <th class="fondo_euro">Euro/Dolor</th>
+        <td>1.2524</td>
+        <td>1.2527</td>
+        <td>1.2539</td>
+        <td>1.2488</td>
+    </tr>
+
+    <tr>
+         <th class="fondo_Dolar">Dolar/yen</th>
+         <td>119.01</td>
+         <td>119.05</td>
+         <td>119.82</td>
+         <td>119.82</td>
+    </tr>
+
+    <tr class="fondo_Amarillo"> 
+        <th class="fondo_Libra">Libra/Dolar</th>
+        <td>1.8606</td>
+        <td>1.8611</td>
+        <td>1.8651</td>
+        <td>1.8522</td>
+    </tr>
+
+    <tr> 
+        <th class="fondo_yen">yen/Euro</th>
+         <td>0.6711</td>
+         <td>0.6705</td>
+         <td>0.66776</td>
+         <td>0.6713</td>
+    </tr>
+
+</table>    
+</body>
+</html>

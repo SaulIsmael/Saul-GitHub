@@ -1,0 +1,1 @@
+select comision from empleado;

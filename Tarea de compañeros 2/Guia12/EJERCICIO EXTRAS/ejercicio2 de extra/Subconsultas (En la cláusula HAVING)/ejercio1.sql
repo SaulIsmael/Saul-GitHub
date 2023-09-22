@@ -1,0 +1,1 @@
+SELECT fabricante.nombre from fabricante  INNER JOIN producto ON fabricante.codigo = producto.codigo_fabricante GROUP BY fabricante.codigo HAVING COUNT(producto.codigo) = (SELECT COUNT(*) FROM producto WHERE codigo_fabricante = (SELECT codigo FROM fabricante WHERE nombre ='Lenovo'));

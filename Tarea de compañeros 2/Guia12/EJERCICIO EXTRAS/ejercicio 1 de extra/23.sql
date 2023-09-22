@@ -1,0 +1,1 @@
+select max(salario), min(salario), (max(salario) - min(salario)) from empleado;

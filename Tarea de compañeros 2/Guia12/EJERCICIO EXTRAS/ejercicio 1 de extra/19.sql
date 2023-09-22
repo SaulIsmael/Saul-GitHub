@@ -1,0 +1,1 @@
+select nombre_depto from departamento where nombre_depto = 'VENTAS' OR  nombre_depto = 'INVESTIGACIÓN' OR  nombre_depto ='Mantenimiento'

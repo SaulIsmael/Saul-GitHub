@@ -1,0 +1,1 @@
+SELECT producto.nombre AS nombre_producto, fabricante.nombre AS nombre_fabricante, precio FROM producto INNER JOIN fabricante ON producto.codigo_fabricante = fabricante.codigo WHERE fabricante.nombre = 'Crucial' AND precio > 200;

@@ -1,0 +1,1 @@
+select nombre,salario from empleado;

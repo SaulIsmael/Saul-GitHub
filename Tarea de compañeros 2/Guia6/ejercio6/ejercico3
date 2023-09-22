@@ -1,0 +1,23 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Java_Guia_Ejercico03;
+
+/**
+ *
+ * @author Admin
+ */
+public class java {
+
+    public static void main(String[] args) {
+        //Definición de datos ejemplos:
+        String nomre = "Cande"; //Cadena
+        int edad=19; //numérico real
+        double peso=70.5; //numérico real
+        boolean mujer= true; //dato logico con valor  verdadero
+        boolean tiempolibre= false; //dato logico con valor falso
+    }
+    
+}

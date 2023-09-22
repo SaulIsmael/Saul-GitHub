@@ -1,0 +1,1 @@
+select* from emplado where nombre like "j%";

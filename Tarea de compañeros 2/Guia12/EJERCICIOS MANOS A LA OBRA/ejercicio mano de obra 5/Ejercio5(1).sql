@@ -1,0 +1,1 @@
+update personaje set aparicion='1938' where personaje = 'superman';

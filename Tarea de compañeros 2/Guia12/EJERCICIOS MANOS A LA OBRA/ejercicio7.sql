@@ -1,0 +1,1 @@
+select * from personaje order by velocidad desc;

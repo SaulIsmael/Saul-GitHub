@@ -1,0 +1,1 @@
+SELECT * FROM empleado WHERE nombre NOT LIKE '%ma%';

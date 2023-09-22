@@ -1,0 +1,1 @@
+SELECT * from fabricante LIMIT 5;

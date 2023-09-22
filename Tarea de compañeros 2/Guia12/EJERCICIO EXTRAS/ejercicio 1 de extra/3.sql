@@ -1,0 +1,1 @@
+select distinct nombre_depto from departamento;

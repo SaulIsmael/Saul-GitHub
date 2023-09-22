@@ -1,0 +1,1 @@
+SELECT * FROM departamento WHERE NOT nombre_depto = 'ventas' AND NOT nombre_depto ='Investigación' AND NOT nombre_depto ='mantenimiento';

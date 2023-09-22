@@ -1,0 +1,1 @@
+select nombre,cargo,salario from empleado order by salario asc;

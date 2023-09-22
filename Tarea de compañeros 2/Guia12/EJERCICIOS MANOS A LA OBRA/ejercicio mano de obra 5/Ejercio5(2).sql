@@ -1,0 +1,1 @@
+update personaje set personje='Flash' where personaje='Flach'

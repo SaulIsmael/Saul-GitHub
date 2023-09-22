@@ -1,0 +1,2 @@
+SELECT nombre, salario, comision, (salario+comision) AS salario_total FROM empleado WHERE NOT comision 
+SELECT nombre, salario, comision, (salario+comision) AS salario_total FROM empleado WHERE comision = 0

@@ -1,0 +1,1 @@
+SELECT nombre FROM producto WHERE nombre LIKE '%portatil%';

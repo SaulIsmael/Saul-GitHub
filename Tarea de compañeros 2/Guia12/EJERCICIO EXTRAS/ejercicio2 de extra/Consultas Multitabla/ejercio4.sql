@@ -1,0 +1,1 @@
+SELECT producto.nombre AS nombre_producto, precio, fabricante.nombre AS nombre_fabricante FROM producto INNER JOIN fabricante ON producto.codigo_fabricante = fabricante.codigo Where fabricante.nombre ='Lenovo';

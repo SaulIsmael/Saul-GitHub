@@ -1,0 +1,1 @@
+SELECT nombre, salario, comision FROM empleado WHERE comision > salario

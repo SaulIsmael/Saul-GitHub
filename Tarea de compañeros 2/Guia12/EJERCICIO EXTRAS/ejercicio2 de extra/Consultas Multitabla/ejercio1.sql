@@ -1,0 +1,1 @@
+select producto.codigo as codigo_producto, producto.nombre as nombre_productos,fabricantes.nombre as nombre_fabricantes, fabricants.codigo as codigo_fabricantes from prodcuto inner join fabricante on producto."codigo_fabricante"="Fabricante.codigo";

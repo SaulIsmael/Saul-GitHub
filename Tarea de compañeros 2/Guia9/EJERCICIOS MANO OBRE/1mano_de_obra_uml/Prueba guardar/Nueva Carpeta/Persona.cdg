@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Persona">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="" visibility="public" xPosition="87.0" yPosition="85.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="untitledField" type="Object" visibility="private"/>
+        <Field name="untitledField1" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="DNI" package="" visibility="public" xPosition="532.0" yPosition="114.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="Dni" source="Persona" target="DNI" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

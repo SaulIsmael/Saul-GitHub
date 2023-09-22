@@ -1,0 +1,1 @@
+select * , (select  nombre from empleado where cargo like 'jefe%' AND empleado.id_depto = departamento.id_depto ) AS jefe_dpto from empleado RIGHT join departamento ON empleado.id_depto = departamento.id_depto;

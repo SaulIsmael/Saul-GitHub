@@ -1,0 +1,1 @@
+SELECT MAX(nombre) FROM empleado;

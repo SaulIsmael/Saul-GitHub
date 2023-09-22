@@ -1,0 +1,1 @@
+select nombre_real from personaje;

@@ -1,0 +1,2 @@
+SELECT * FROM producto right JOIN fabricante ON producto.codigo_fabricante = fabricante.codigo WHERE producto.codigo IS NULL;
+SELECT * FROM fabricante left JOIN producto ON producto.codigo_fabricante = fabricante.codigo WHERE producto.codigo IS NULL;

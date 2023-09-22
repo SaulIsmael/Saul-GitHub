@@ -1,0 +1,1 @@
+select * from empleado where salario >= (select avg(salario) from empleado)order by id_depto;
